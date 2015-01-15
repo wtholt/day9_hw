@@ -1,8 +1,12 @@
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+<a href="/newblog"><h5>Create a Blog</a></h5>
 
-</body>
-</html>
+<ul>
+	<% @blogs.each do |blog|%>
+		<li>
+			<strong><a href="/blog/<%= blog.id %>"><%= blog.title %></a></strong>
+			<%= blog.date %>
+			<p><%= blog.blog %></p>
+		</li>
+	<% end %>
+
+</ul>

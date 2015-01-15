@@ -4,8 +4,9 @@
 	<% @blogs.each do |blog|%>
 		<li>
 			<strong><a href="/blog/<%= blog.id %>"><%= blog.title %></a></strong>
-			<%= blog.date %>
-			<p><%= blog.blog %></p>
+			<%= blog.date %><br>
+			<%= blog.blog %><br>
+			<a href="/update_blog/<%= blog.id %>">Edit</a>
 		</li>
 	<% end %>
 

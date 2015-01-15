@@ -46,7 +46,18 @@ delete '/delete_blog/:id' do
 	redirect to '/'
 end
 
+get '/update_blog/:id' do
+	@blog = Blog.get params[:id]
+	erb :update_blog
+end
 
+patch '/update/:id' do
+	@blog = Blog.get params[:id]
+	@blog.update title:params[:title]
+	@blog.update date:params[:date]
+	@blog.update blog:params[:blog]
+	redirect to '/'
+end
 
 
 

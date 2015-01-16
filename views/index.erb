@@ -1,13 +1,19 @@
-<a href="/newblog"><h5>Create a Blog</a></h5>
+<div class = "createbloglink"><a href="/newblog"><h5>Create a new blog</a></h5></div>
 
-<ul>
+<div class = "blogs">
+	<ul>
 	<% @blogs.each do |blog|%>
 		<li>
 			<strong><a href="/blog/<%= blog.id %>"><%= blog.title %></a></strong>
-			<%= blog.date %><br>
-			<%= blog.blog %><br>
+			<br>
+			<%= blog.date %>
+			<br>
+			<%= blog.blog %>
+			<br>
 			<a href="/update_blog/<%= blog.id %>">Edit</a>
+			<br>
 		</li>
 	<% end %>
 
-</ul>
+	</ul>
+</div>

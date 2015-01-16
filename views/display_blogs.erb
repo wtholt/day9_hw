@@ -1,11 +1,14 @@
-
+<div class = "blogs1">
 <%= @blog.title %>
+<br>
 <%= @blog.date %>
+<br>
 <%= @blog.blog %>
-<a href="/">Back</a>
+<br>
+<!-- <a href="/">Back</a> -->
 
 <form action = "/delete_blog/<%= @blog.id %>" method= "post">
 		<input type ="hidden" name ="_method" value ="delete">
 		<input type ="submit" value ="Delete">
 </form>
-
+</div>

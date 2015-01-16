@@ -1,0 +1,118 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-image:url("cloud.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	font-family: Helvetica sans-serif;
+}
+
+body a {
+	color: #fff;
+	text-decoration: none;
+}
+
+body a:hover {
+	color: dodgerblue;
+}
+
+.title {
+	top: 5%;
+	left: 0;
+	right: 0;
+	position: relative;
+	text-align: center;
+	/*border-bottom: 1px solid #fff;*/
+	font-weight: bolder;
+}
+
+.subtitle {
+	top: 6%;
+	left: 0;
+	right: 0;
+	position: relative;
+	text-align: center;
+	/*border-bottom: 1px solid #fff;*/
+}
+
+.createbloglink {
+	top: 8%;
+	left: 0;
+	right: 0;
+	position: relative;
+	text-align: center;
+	/*border-bottom: 1px solid #fff;*/
+}
+
+.blogs {
+	top: 12%;
+	left: 0;
+	right: 0;
+	position: relative;
+	text-align: center;
+	padding-right: 30px; 
+}
+
+.blogs1 {
+	top: 12%;
+	left: 0;
+	right: 0;
+	position: relative;
+	text-align: center;
+}
+
+.blogs1 form input {
+	background: rgba(255, 255, 255, 0.01);
+	color: #fff;
+	font-size: 15px;
+	text-decoration: underline;
+	font-weight: bolder;
+	border: none;
+}
+
+.blogs ul li {
+	list-style: none;
+	padding: 5px;
+}
+
+.createform {
+	top: 15%;
+	left: 0;
+	right: 0;
+	position: relative;
+	text-align: center;
+	outline: 0;
+	border: none;
+}
+.createform form input {
+	background: rgba(255, 255, 255, 0.01);
+	border: none;
+	color: white;
+	font-size: 12px;
+	outline: none;
+}
+
+.createform form textarea{
+	background: rgba(255, 255, 255, 0.01);
+	border: none;
+	border-bottom: 1px solid gray;
+	color: #fff;
+	font-size: 12px;
+	outline: none;
+}
+
+.createform form label {
+	font-weight: bolder;
+}
+
+.createform form input:last-of-type {
+	font-size: 15px;
+	text-decoration: underline;
+	font-weight: bolder;
+}

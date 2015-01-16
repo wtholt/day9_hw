@@ -1,16 +1,18 @@
-<h4>Create a Blog</h4>
-<a href = "/">Back</a>
+<!-- <div class = "createbloglink"><h4>Create a new blog</h4></div> -->
 
+
+<div class = "createform">
 <form action="/create_blog" method = "post" id="blog">
-	<label>Title</label>
+	<label>Title - </label>
 	<input type = "text" name = "title">
 	<br>
-	<label>Date</label>
+	<label>Date - </label>
 	<input type = "text" name = "date">
 	<br>
-	<label>Blog</label>
-	<textarea name = "blog" form="blog" rows = "10" column = "50"></textarea>
+	<label>Blog - </label>
+	<textarea name = "blog" form="blog" maxlength = "1000" cols = "100" rows = "1"></textarea>
+	<br>
 	<input type = "submit" value = "Create Blog">
 </form>
-
+</div>
 

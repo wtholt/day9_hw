@@ -11,7 +11,7 @@ class Blog
 	property :id, Serial
 	property :title, String
 	property :date, String
-	property :blog, String
+	property :blog, Text
 end
 
 DataMapper.finalize.auto_upgrade!
